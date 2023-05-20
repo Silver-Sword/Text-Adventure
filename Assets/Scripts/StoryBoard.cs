@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "StoryBoard")]
+[CreateAssetMenu(menuName = "Buttons/StoryBoard")]
 public class StoryBoard : ScriptableObject
 {
-    public string storyText;
+    [TextArea(5, 15)] public string storyText;
     public StoryButton[] buttons;
 }

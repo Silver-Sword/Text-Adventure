@@ -2,9 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "ButtonBehavior")]
-public class ButtonBehavior : ScriptableObject
+[System.Serializable]
+public class ButtonBehavior
 {
-    public StoryButton nextScene;
-    public ButtonBehavior[] buttonBehaviors;
+    public StoryBoard nextScene;
+    public Reaction[] buttonBehaviors;
+
+    public StoryBoard Execute()
+    {
+        foreach(Reaction action in buttonBehaviors)
+            action.Execute();
+        
+        return nextScene;
+    }
 }
