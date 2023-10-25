@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// Button texts
 [System.Serializable]
 public class StoryButton
 {
