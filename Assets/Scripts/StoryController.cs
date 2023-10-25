@@ -17,7 +17,7 @@ public class StoryController : MonoBehaviour
     private StoryOptions[] optionLayouts = new StoryOptions[MAX_BUTTONS + 1];
 
     // constants that are generated from gameobjects
-    private TextMeshPro storyText;
+    private TMP_Text storyText;
 
     // trackers
     private StoryBoard currentStory;
@@ -27,7 +27,7 @@ public class StoryController : MonoBehaviour
     void Awake()
     {
         // grab the story text
-        storyText = storyTextObject.GetComponent<TextMeshPro>();
+        storyText = storyTextObject.GetComponent<TMP_Text>();
 
         // automatically put the option layouts that exist in the layouts array
         StoryOptions[] optionsInScene = GameObject.FindObjectsOfType<StoryOptions>(true);
@@ -99,7 +99,7 @@ public class StoryController : MonoBehaviour
         currentOptions = optionLayouts[numButtons];
     }
 
-    void ChooseButton(int buttonIndex)
+    public void ChooseButton(int buttonIndex)
     {
         if(buttonIndex >= currentButtons.Length)
         {

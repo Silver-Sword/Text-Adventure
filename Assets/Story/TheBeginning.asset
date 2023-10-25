@@ -12,5 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bd55c9a42e0c9c47bb7b2659272f544, type: 3}
   m_Name: TheBeginning
   m_EditorClassIdentifier: 
-  storyText: 
-  buttons: []
+  storyText: You wake up. Begin?
+  buttons:
+  - buttonText: Continue
+    visibilityCondition: []
+    behavior:
+      nextScene: {fileID: 0}
+      buttonBehaviors: []

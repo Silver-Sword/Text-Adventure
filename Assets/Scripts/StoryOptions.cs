@@ -9,7 +9,7 @@ using TMPro;
 public class StoryOptions : MonoBehaviour
 {
     public GameObject[] buttons;
-    private TextMeshPro[] buttonText;
+    private TMP_Text[] buttonText;
 
     void Awake()
     {
@@ -19,9 +19,9 @@ public class StoryOptions : MonoBehaviour
             return;
         }
 
-        buttonText = new TextMeshPro[buttons.Length];
+        buttonText = new TMP_Text[buttons.Length];
         for(int i = 0; i < buttons.Length; i++)
-            buttonText[i] = buttons[i].GetComponentInChildren<TextMeshPro>();
+            buttonText[i] = buttons[i].GetComponentInChildren<TMP_Text>();
 
         // set off by default
         SetButtons(false);
