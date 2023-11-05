@@ -59,10 +59,10 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
-ProjectSettings\VisualScriptingSettings.asset
+ProjectSettings/VisualScriptingSettings.asset
 
-UserSettings\EditorUserSettings.asset
-
-UserSettings\Layouts\default-2021.dwlt
+UserSettings/*
 
 Text Adventure.sln
+
+obsidian storyboard/storyboarding/.obsidian*
