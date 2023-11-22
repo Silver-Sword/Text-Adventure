@@ -9,7 +9,7 @@ the environment through branching choices to help the protagonist
 escape.
 
 
-**Current Development Stage: Storyboarding**
+**Current Development Stage: Writing Demo Story**
 
 ## Development Technology
 
